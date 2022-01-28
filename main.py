@@ -20,7 +20,7 @@ if __name__ == "__main__":
     try:
         time.sleep(30)  # Wait for lavalink to start
 
-        bot.run(os.getenv(TOKEN), reconnect=True)
+        bot.run(config.token, reconnect=True)
     except KeyboardInterrupt:
         try:
             bot.session.close()  # Closing the ClientSession
