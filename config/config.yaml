@@ -1,5 +1,5 @@
 Bot:
-  token: 'ODcxNzA0NzQ2MjIwNzI4MzUw.YQfMTg.U8OUJIGGB54eJXDJgL6tBN3Frpw' # Discord bot token
+  token: '' # Discord bot token
   prefix: '?' # Prefix for commands.
   owners:
      - 256132879770189825 # List of owners, this is required, you can add your account ID.
