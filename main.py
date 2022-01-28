@@ -1,6 +1,7 @@
 #  -*- coding: utf-8 -*-
 import sys
 import time
+import os
 
 from loguru import logger
 
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     try:
         time.sleep(30)  # Wait for lavalink to start
 
-        bot.run(config.token, reconnect=True)
+        bot.run(os.getenv(TOKEN), reconnect=True)
     except KeyboardInterrupt:
         try:
             bot.session.close()  # Closing the ClientSession
